@@ -13,9 +13,9 @@ namespace NewSeleniumProject
     {
         IWebDriver driver = new ChromeDriver();
         [Test]
-        public void myFirstTest()
+        public void MyFirstTest()
         { driver.Navigate().GoToUrl("http://www.swtestacademy.com");
-            Assert.AreEqual("Software Test Academy | Software Testing Academy", driver.Title);
+            Assert.AreEqual(expected: "SW Test Academy | Software Testing Academy", actual: driver.Title);
             driver.Close();
             driver.Quit();
         }
