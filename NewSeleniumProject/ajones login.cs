@@ -7,10 +7,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
-namespace SeleniumTests
+namespace NewSeleniumProject
 {
     [TestFixture]
-    public class AgaltreyLogIn
+    public class AjonesLogin
     {
         private IWebDriver driver;
         private StringBuilder verificationErrors;
@@ -40,13 +40,13 @@ namespace SeleniumTests
         }
         
         [Test]
-        public void TheAgaltreyLogInTest()
+        public void TheAjonesLoginTest()
         {
-            // open | /Account/Logon | 
-            driver.Navigate().GoToUrl(baseURL + "/Account/Logon");
-            // type | id=UserName | angelgaltrey
+            // open | /Account/Logon?ReturnUrl=%2f | 
+            driver.Navigate().GoToUrl(baseURL + "/Account/Logon?ReturnUrl=%2f");
+            // type | id=UserName | alunjones
             driver.FindElement(By.Id("UserName")).Clear();
-            driver.FindElement(By.Id("UserName")).SendKeys("angelgaltrey");
+            driver.FindElement(By.Id("UserName")).SendKeys("alunjones");
             // type | id=Password | Aramark22
             driver.FindElement(By.Id("Password")).Clear();
             driver.FindElement(By.Id("Password")).SendKeys("Aramark22");
