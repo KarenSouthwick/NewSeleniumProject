@@ -15,7 +15,7 @@ namespace NewSeleniumProject
         [Test]
         public void DoMyFirstTest()
         { driver.Navigate().GoToUrl("http://www.swtestacademy.com");
-            Assert.AreEqual(expected: "SW Test Academy - Software Testing Academy", actual: driver.Title);
+            Assert.AreEqual(expected: "SW Test Academy - Software Test Academy", actual: driver.Title);
             driver.Close();
             driver.Quit();
         }
