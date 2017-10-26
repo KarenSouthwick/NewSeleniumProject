@@ -16,6 +16,7 @@
         private RemoteWebDriver driver;
         private string browser;
         public TestContext TestContext { get; set; }
+        public string BaseURL { get => baseURL; set => baseURL = value; }
 
         [TestMethod]
         [TestCategory("Selenium")]
