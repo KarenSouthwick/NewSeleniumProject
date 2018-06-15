@@ -55,6 +55,7 @@
     <Compile Include="CreateProductAndMap.cs" />
     <Compile Include="MyFirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tobedeleted.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
