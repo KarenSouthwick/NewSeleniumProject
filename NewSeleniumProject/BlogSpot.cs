@@ -22,7 +22,7 @@ namespace NewSeleniumProject
             try
             {
                 IWebDriver driver = new ChromeDriver();
-                driver.Navigate().GoToUrl("https://uat-platform.authenticateis.com/Account/Logon");
+                driver.Navigate().GoToUrl("https://qa-platform.authenticateis.com/Account/Logon");
                 driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
                 excel.Application x1app = new excel.Application();

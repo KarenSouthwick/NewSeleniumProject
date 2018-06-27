@@ -22,14 +22,14 @@ namespace NewSeleniumProject
         public void Test()
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://uat-platform.authenticateis.com/Account/Logon");
+            driver.Navigate().GoToUrl("https://qa-platform.authenticateis.com/Account/Logon");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 
-            driver.FindElement(By.Id("UserName")).SendKeys("angelgaltrey");
+            driver.FindElement(By.Id("UserName")).SendKeys("User2867");
             driver.FindElement(By.Id("Password")).SendKeys("Aramark22");
             driver.FindElement(By.Id("do-submit")).Click();
 
-            driver.FindElement(By.LinkText("Products")).Click();
+            //driver.FindElement(By.LinkText("Products")).Click();
             driver.FindElement(By.LinkText("Product Catalogue")).Click();
             driver.FindElement(By.PartialLinkText("Benson")).Click();
 
